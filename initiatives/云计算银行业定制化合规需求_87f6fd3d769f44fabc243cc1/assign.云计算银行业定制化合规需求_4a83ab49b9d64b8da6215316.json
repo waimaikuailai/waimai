@@ -1,0 +1,25 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "云计算银行业定制化合规需求",
+  "policyDefinitionId": "/subscriptions/2dfe26ca-84e4-4fba-96d7-7d57ad11068b/providers/Microsoft.Authorization/policySetDefinitions/87f6fd3d769f44fabc243cc1",
+  "scope": "/subscriptions/2dfe26ca-84e4-4fba-96d7-7d57ad11068b",
+  "notScopes": [],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "xiao zhuang",
+   "parameterScopes": {},
+   "createdBy": "9cf955a1-7a1a-4777-bd04-d68e83b1b6e5",
+   "createdOn": "2021-06-16T01:07:37.0933992Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/2dfe26ca-84e4-4fba-96d7-7d57ad11068b/providers/Microsoft.Authorization/policyAssignments/4a83ab49b9d64b8da6215316",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "4a83ab49b9d64b8da6215316"
+}

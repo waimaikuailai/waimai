@@ -1,0 +1,46 @@
+name: manage-azure-policy-9f4ce61a
+on:
+  workflow_dispatch:
+    inputs:
+      remarks:
+        description: 'Reason for triggering the workflow run'
+        required: false
+        default: 'Updating Azure Policies'
+
+
+## Uncomment the following if you wish to automatically trigger workflow run with every commit
+#
+#  push:
+#    paths:
+#      - 'initiatives/云计算证券行业定制化合规需求_e58420da78bb4d0697cf4a1e/**'
+#      - 'initiatives/云计算保险行业定制化合规需求_cbd59e5cffae498d8a416590/**'
+#      - 'initiatives/网络安全等级保护（三级）_c0cf93ba230343a48c787a06/**'
+#      - 'initiatives/云计算银行业定制化合规需求_87f6fd3d769f44fabc243cc1/**'
+#      - 'initiatives/网络安全等级保护（四级）_2e27ec93a01646bfbdf654b3/**'
+#      - 'initiatives/网络安全等级保护（四级）_2bc1fa649a8d40028b1e4a2f/**'
+#      - 'initiatives/网络安全等级保护(云计算扩展要求)_2982fd435afa4ba5a15cc237/**'
+#      - 'initiatives/网络安全等级保护（三级）_28b38f3f384a464fb88e0b7d/**'
+#      - .github/workflows/manage-azure-policy-9f4ce61a.yml
+jobs:
+  apply-azure-policy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS_9f4ce61a}}
+        allow-no-subscriptions: true
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      with:
+        paths: |
+          initiatives/云计算证券行业定制化合规需求_e58420da78bb4d0697cf4a1e/**
+          initiatives/云计算保险行业定制化合规需求_cbd59e5cffae498d8a416590/**
+          initiatives/网络安全等级保护（三级）_c0cf93ba230343a48c787a06/**
+          initiatives/云计算银行业定制化合规需求_87f6fd3d769f44fabc243cc1/**
+          initiatives/网络安全等级保护（四级）_2e27ec93a01646bfbdf654b3/**
+          initiatives/网络安全等级保护（四级）_2bc1fa649a8d40028b1e4a2f/**
+          initiatives/网络安全等级保护(云计算扩展要求)_2982fd435afa4ba5a15cc237/**
+          initiatives/网络安全等级保护（三级）_28b38f3f384a464fb88e0b7d/**

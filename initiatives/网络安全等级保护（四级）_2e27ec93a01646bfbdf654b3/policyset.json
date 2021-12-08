@@ -1,0 +1,47 @@
+{
+ "properties": {
+  "displayName": "网络安全等级保护（四级）",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "category": "MLPS2.0",
+   "version": "v1.0",
+   "createdBy": "9cf955a1-7a1a-4777-bd04-d68e83b1b6e5",
+   "createdOn": "2021-06-01T08:27:09.9267601Z",
+   "updatedBy": "9cf955a1-7a1a-4777-bd04-d68e83b1b6e5",
+   "updatedOn": "2021-06-01T13:14:42.0209913Z",
+   "ASC": "true"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "审核未配置灾难恢复的虚拟机_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0015ea4d-51ff-4ce3-8d8c-f3f8f0179a56",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "网络观察程序流日志应启用流量分析_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f080164-9f4d-497e-9db6-416dc9f7b48a",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[预览]: 应在 Windows 虚拟机上安装网络流量数据收集代理_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[预览]: 应在 Linux 虚拟机上安装网络流量数据收集代理_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/2dfe26ca-84e4-4fba-96d7-7d57ad11068b/providers/Microsoft.Authorization/policySetDefinitions/2e27ec93a01646bfbdf654b3",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "2e27ec93a01646bfbdf654b3"
+}

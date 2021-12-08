@@ -1,0 +1,427 @@
+{
+ "properties": {
+  "displayName": "网络安全等级保护（三级）",
+  "policyType": "Custom",
+  "description": "通用型自动化安全合规检查策略，适用于中国大陆相关企业基于云环境的为满足网络安全等级保护(三级)安全合规检测的要求。",
+  "metadata": {
+   "category": "MLPS2.0 compliance",
+   "version": "V1.0",
+   "createdBy": "9cf955a1-7a1a-4777-bd04-d68e83b1b6e5",
+   "createdOn": "2021-06-13T16:39:15.289708Z",
+   "updatedBy": "9cf955a1-7a1a-4777-bd04-d68e83b1b6e5",
+   "updatedOn": "2021-06-17T17:49:16.833906Z",
+   "ASC": "true",
+   "parameterScopes": {
+    "subnetId": "/subscriptions/2dfe26ca-84e4-4fba-96d7-7d57ad11068b/resourcegroups/opeartion-management-zone/providers/microsoft.network/virtualnetworks/opeartion-management-zone-vnet"
+   }
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "[预览]: 所有 Internet 流量都应通过你部署的 Azure 防火墙进行路由_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/fc5e4038-4584-4632-8c85-c0448d374b2c",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.1 网络架构"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "应启用 Azure SQL 数据库上的虚拟网络防火墙规则，以便允许来自指定子网的流量",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/77e8b146-0078-4fb2-b002-e112381199f0",
+    "parameters": {
+     "subnetId": {
+      "value": "/subscriptions/2dfe26ca-84e4-4fba-96d7-7d57ad11068b/resourcegroups/opeartion-management-zone/providers/microsoft.network/virtualnetworks/opeartion-management-zone-vnet/subnets/default"
+     }
+    },
+    "groupNames": [
+     "8.1.2.1 网络架构"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Microsoft Managed Control 1037 - Least Privilege | Network Access To Privileged Commands_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/fa4c2a3d-1294-41a3-9ada-0e540471e9fb",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.1 网络架构"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Microsoft Managed Control 1638 - Boundary Protection | Dynamic Isolation / Segregation_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/49b99653-32cd-405d-a135-e7d60a9aae1f",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.1 网络架构"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Microsoft Managed Control 1280 - Telecommunications Services | Priority Of Service Provisions_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/fa108498-b3a8-4ffb-9e79-1107e76afad3",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.1 网络架构"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Microsoft Managed Control 1281 - Telecommunications Services | Priority Of Service Provisions_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/8dc459b3-0e77-45af-8d71-cfd8c9654fe2",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.1 网络架构"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "应禁用 Azure SQL 数据库上的公用网络访问_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1b8ca024-1d5c-4dec-8995-b1a932b41780",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.2 通信传输"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "应启用 SQL 数据库上的透明数据加密_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/17k78e20-9358-41c9-923c-fb736d382a12",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.2 通信传输"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "应启用 Azure SQL 数据库上的专用终结点连接_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7698e800-9299-47a6-b3b6-5a0fee576eed",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.2 通信传输"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "应为 PostgreSQL 数据库服务器启用连接限制_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5345bb39-67dc-4960-a1bf-427e16b9a0bd",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.2 通信传输"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Azure SQL 数据库的最低 TLS 版本应为 1.2_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/32e6bbec-16b6-44c2-be37-c5b672d103cf",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.2 通信传输"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "[预览]: 应对 SQL 数据库中的敏感数据分类_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cc9835f2-9f6b-4cc8-ab4a-f8ef615eb349",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.2 通信传输"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "应为 PostgreSQL 数据库服务器启用强制执行 SSL 连接_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d158790f-bfb0-486c-8631-2dc6b4e8e6af",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.2 通信传输"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "应为 MySQL 数据库服务器启用强制执行 SSL 连接_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e802a67a-daf5-4436-9ea6-f6d821dd0c5d",
+    "parameters": {},
+    "groupNames": [
+     "8.1.2.2 通信传输"
+    ]
+   }
+  ],
+  "policyDefinitionGroups": [
+   {
+    "name": "8.1.1.1 物理位置选择",
+    "category": "8.1.1 安全物理环境"
+   },
+   {
+    "name": "8.1.1.2 物理访问控制",
+    "category": "8.1.1 安全物理环境"
+   },
+   {
+    "name": "8.1.1.3 防盗窃和防破坏",
+    "category": "8.1.1 安全物理环境"
+   },
+   {
+    "name": "8.1.1.4 防雷击",
+    "category": "8.1.1 安全物理环境"
+   },
+   {
+    "name": "8.1.1.5 防火",
+    "category": "8.1.1 安全物理环境"
+   },
+   {
+    "name": "8.1.1.6 防水和防潮",
+    "category": "8.1.1 安全物理环境"
+   },
+   {
+    "name": "8.1.1.7 防静电",
+    "category": "8.1.1 安全物理环境"
+   },
+   {
+    "name": "8.1.1.8 温湿度控制",
+    "category": "8.1.1 安全物理环境"
+   },
+   {
+    "name": "8.1.1.9 电力供应",
+    "category": "8.1.1 安全物理环境"
+   },
+   {
+    "name": "8.1.1.10 电磁防护",
+    "category": "8.1.1 安全物理环境"
+   },
+   {
+    "name": "8.1.2.1 网络架构",
+    "category": "8.1.2 安全通信网络"
+   },
+   {
+    "name": "8.1.2.2 通信传输",
+    "category": "8.1.2 安全通信网络"
+   },
+   {
+    "name": "8.1.2.3 可信验证",
+    "category": "8.1.2 安全通信网络"
+   },
+   {
+    "name": "8.1.3.1 边界防护",
+    "category": "8.1.3 安全区域边界"
+   },
+   {
+    "name": "8.1.3.2 访问控制",
+    "category": "8.1.3 安全区域边界"
+   },
+   {
+    "name": "8.1.3.3 入侵防范",
+    "category": "8.1.3 安全区域边界"
+   },
+   {
+    "name": "8.1.3.4 恶意代码和垃圾邮件防范",
+    "category": "8.1.3 安全区域边界"
+   },
+   {
+    "name": "8.1.3.5 安全审计",
+    "category": "8.1.3 安全区域边界"
+   },
+   {
+    "name": "8.1.3.6 可信验证",
+    "category": "8.1.3 安全区域边界"
+   },
+   {
+    "name": "8.1.4.1 身份鉴别",
+    "category": "8.1.4 安全计算环境"
+   },
+   {
+    "name": "8.1.4.2 访问控制",
+    "category": "8.1.4 安全计算环境"
+   },
+   {
+    "name": "8.1.4.3 安全审计",
+    "category": "8.1.4 安全计算环境"
+   },
+   {
+    "name": "8.1.4.4 入侵防范",
+    "category": "8.1.4 安全计算环境"
+   },
+   {
+    "name": "8.1.4.5 恶意代码防范",
+    "category": "8.1.4 安全计算环境"
+   },
+   {
+    "name": "8.1.4.6 可信验证",
+    "category": "8.1.4 安全计算环境"
+   },
+   {
+    "name": "8.1.4.7 数据完整性",
+    "category": "8.1.4 安全计算环境"
+   },
+   {
+    "name": "8.1.4.8 数据保密性",
+    "category": "8.1.4 安全计算环境"
+   },
+   {
+    "name": "8.1.4.9 数据备份恢复",
+    "category": "8.1.4 安全计算环境"
+   },
+   {
+    "name": "8.1.4.10 剩余信息保护",
+    "category": "8.1.4 安全计算环境"
+   },
+   {
+    "name": "8.1.4.11 个人信息保护",
+    "category": "8.1.4 安全计算环境"
+   },
+   {
+    "name": "8.1.5.1 系统管理",
+    "category": "8.1.5 安全管理中心"
+   },
+   {
+    "name": "8.1.5.2 审计管理",
+    "category": "8.1.5 安全管理中心"
+   },
+   {
+    "name": "8.1.5.3 安全管理",
+    "category": "8.1.5 安全管理中心"
+   },
+   {
+    "name": "8.1.5.4 集中管控",
+    "category": "8.1.5 安全管理中心"
+   },
+   {
+    "name": "8.1.6.1 安全策略",
+    "category": "8.1.6 安全管理制度"
+   },
+   {
+    "name": "8.1.6.2 管理制度",
+    "category": "8.1.6 安全管理制度"
+   },
+   {
+    "name": "8.1.6.3 制定和发布",
+    "category": "8.1.6 安全管理制度"
+   },
+   {
+    "name": "8.1.6.4 评审和修订",
+    "category": "8.1.6 安全管理制度"
+   },
+   {
+    "name": "8.1.7.1 岗位设置",
+    "category": "8.1.7 安全管理机构"
+   },
+   {
+    "name": "8.1.7.2 人员配备",
+    "category": "8.1.7 安全管理机构"
+   },
+   {
+    "name": "8.1.7.3 授权和审批",
+    "category": "8.1.7 安全管理机构"
+   },
+   {
+    "name": "8.1.7.4 沟通和合作",
+    "category": "8.1.7 安全管理机构"
+   },
+   {
+    "name": "8.1.7.5 审核和检查",
+    "category": "8.1.7 安全管理机构"
+   },
+   {
+    "name": "8.1.8.1 人员录用",
+    "category": "8.1.8 安全管理人员"
+   },
+   {
+    "name": "8.1.8.2 人员离岗",
+    "category": "8.1.8 安全管理人员"
+   },
+   {
+    "name": "8.1.8.3 安全意识教育和培训",
+    "category": "8.1.8 安全管理人员"
+   },
+   {
+    "name": "8.1.8.4 外部人员访问管理",
+    "category": "8.1.8 安全管理人员"
+   },
+   {
+    "name": "8.1.9.1 定级和备案",
+    "category": "8.1.9 安全建设管理"
+   },
+   {
+    "name": "8.1.10.1 环境管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.9.2 安全方案设计",
+    "category": "8.1.9 安全建设管理"
+   },
+   {
+    "name": "8.1.9.3 产品采购和使用",
+    "category": "8.1.9 安全建设管理"
+   },
+   {
+    "name": "8.1.9.4 自行软件开发",
+    "category": "8.1.9 安全建设管理"
+   },
+   {
+    "name": "8.1.9.5 外包软件开发",
+    "category": "8.1.9 安全建设管理"
+   },
+   {
+    "name": "8.1.9.6 工程实施",
+    "category": "8.1.9 安全建设管理"
+   },
+   {
+    "name": "8.1.9.7 测试验收",
+    "category": "8.1.9 安全建设管理"
+   },
+   {
+    "name": "8.1.9.8 系统交付",
+    "category": "8.1.9 安全建设管理"
+   },
+   {
+    "name": "8.1.9.9 等级测评",
+    "category": "8.1.9 安全建设管理"
+   },
+   {
+    "name": "8.1.9.10 服务供应商选择",
+    "category": "8.1.9 安全建设管理"
+   },
+   {
+    "name": "8.1.10.2 资产管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.3 介质管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.4 设备维护管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.5 漏洞和风险管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.6 网络和系统安全管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.7 恶意代码防范管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.8 配置管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.9 密码管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.10 变更管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.11 备份与恢复管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.12 安全事件处置",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.13 应急预案管理",
+    "category": "8.1.10 安全运维管理"
+   },
+   {
+    "name": "8.1.10.14 外包运维管理",
+    "category": "8.1.10 安全运维管理"
+   }
+  ]
+ },
+ "id": "/subscriptions/2dfe26ca-84e4-4fba-96d7-7d57ad11068b/providers/Microsoft.Authorization/policySetDefinitions/28b38f3f384a464fb88e0b7d",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "28b38f3f384a464fb88e0b7d"
+}

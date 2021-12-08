@@ -1,0 +1,53 @@
+{
+ "properties": {
+  "displayName": "网络安全等级保护(云计算扩展要求)",
+  "policyType": "Custom",
+  "description": "通用型自动化安全合规检查策略，适用于中国大陆相关企业，针对云环境能力提供者的安全合规检测（包括公有云与私有云）。",
+  "metadata": {
+   "category": "等保审计",
+   "createdBy": "9cf955a1-7a1a-4777-bd04-d68e83b1b6e5",
+   "createdOn": "2021-06-01T07:04:41.5394578Z",
+   "updatedBy": "9cf955a1-7a1a-4777-bd04-d68e83b1b6e5",
+   "updatedOn": "2021-06-18T04:10:22.1086469Z",
+   "ASC": "true",
+   "version": "v1.0"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Microsoft Managed Control 1638 - Boundary Protection | Dynamic Isolation / Segregation_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/49b99653-32cd-405d-a135-e7d60a9aae1f",
+    "parameters": {},
+    "groupNames": [
+     "8.2.2.1 网络架构"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Microsoft Managed Control 1639 - Boundary Protection | Isolation Of Information System Components_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/78e8e649-50f6-4fe3-99ac-fedc2e63b03f",
+    "parameters": {},
+    "groupNames": [
+     "8.2.2.1 网络架构"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Microsoft Managed Control 1636 - Boundary Protection | Isolation Of Security Tools / Mechanisms / Su_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7b694eed-7081-43c6-867c-41c76c961043",
+    "parameters": {},
+    "groupNames": [
+     "8.2.2.1 网络架构"
+    ]
+   }
+  ],
+  "policyDefinitionGroups": [
+   {
+    "name": "8.2.2.1 网络架构",
+    "category": "8.2.2 安全通信网络",
+    "description": "网络安全等级保护2.0 三级 云计算安全测评扩展"
+   }
+  ]
+ },
+ "id": "/subscriptions/2dfe26ca-84e4-4fba-96d7-7d57ad11068b/providers/Microsoft.Authorization/policySetDefinitions/2982fd435afa4ba5a15cc237",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "2982fd435afa4ba5a15cc237"
+}

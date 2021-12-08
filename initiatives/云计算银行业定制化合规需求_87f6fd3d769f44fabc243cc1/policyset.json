@@ -1,0 +1,47 @@
+{
+ "properties": {
+  "displayName": "云计算银行业定制化合规需求",
+  "policyType": "Custom",
+  "description": "本合规策略组，仅针对中国大陆银行业特有的云计算合规要求而制定。",
+  "metadata": {
+   "category": "银行业云计算合规条例",
+   "version": "v1.0",
+   "createdBy": "9cf955a1-7a1a-4777-bd04-d68e83b1b6e5",
+   "createdOn": "2021-06-13T16:50:39.0637368Z",
+   "updatedBy": "9cf955a1-7a1a-4777-bd04-d68e83b1b6e5",
+   "updatedOn": "2021-06-16T01:07:30.2295532Z",
+   "ASC": "true"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "应安全配置云服务(扩展支持)角色实例_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a0c11ca4-5828-4384-a2f2-fd7444dd5b4d",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "云服务(扩展支持)角色实例应安装系统更新_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4df26ba8-026d-45b0-9521-bffa44d741d2",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "云服务(扩展支持)角色实例应安装终结点保护解决方案_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e378679-f122-4a96-a739-a7729c46e1aa",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Log Analytics 代理应安装在你的云服务(扩展支持)角色实例上_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/15fdbc87-8a47-4ee9-a2aa-9a2ea1f37554",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/2dfe26ca-84e4-4fba-96d7-7d57ad11068b/providers/Microsoft.Authorization/policySetDefinitions/87f6fd3d769f44fabc243cc1",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "87f6fd3d769f44fabc243cc1"
+}
